@@ -2,16 +2,16 @@
 import os
 # agents.py
 
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 load_dotenv()
 
-from crewai import Agent, LLM
+from crewai import Agent, LLM # type: ignore
 from tools import ReadFinancialDocumentTool
 
 # Initialize LLM
 llm = LLM(
     model="openai/gpt-4o-mini",
-    api_key = os.getenv("OPENAI_API_KEY")
+    api_key = os.getenv("OPENAI_API_KEY"),
     temperature=0.3,
 )
 

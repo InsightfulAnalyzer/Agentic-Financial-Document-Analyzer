@@ -1,6 +1,6 @@
 # task.py
 
-from crewai import Task
+from crewai import Task # type: ignore
 from agents import (
     financial_analyst,
     verifier,

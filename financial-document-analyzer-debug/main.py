@@ -1,10 +1,10 @@
 # main.py
 
-from fastapi import FastAPI, File, UploadFile, Form, HTTPException
+from fastapi import FastAPI, File, UploadFile, Form, HTTPException # type: ignore
 import os
 import uuid
 
-from crewai import Crew, Process
+from crewai import Crew, Process # type: ignore
 from agents import (
     financial_analyst,
     verifier,

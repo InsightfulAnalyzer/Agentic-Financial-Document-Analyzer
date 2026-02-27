@@ -1,7 +1,7 @@
 # tools.py
 
-import pdfplumber
-from crewai.tools import BaseTool
+import pdfplumber # type: ignore
+from crewai.tools import BaseTool # type: ignore
 
 
 class ReadFinancialDocumentTool(BaseTool):
