@@ -11,7 +11,7 @@ from tools import ReadFinancialDocumentTool
 # Initialize LLM
 llm = LLM(
     model="openai/gpt-4o-mini",
-    api_key="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",
+    api_key = os.getenv("OPENAI_API_KEY")
     temperature=0.3,
 )
 
